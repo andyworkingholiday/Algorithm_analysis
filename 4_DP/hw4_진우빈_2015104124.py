@@ -55,10 +55,10 @@ def tree(key, r, i, j):
         p=Node(key[k])
         p.l_child=tree(key,r,i,k-1)
         p.r_child=tree(key,r,k+1,j)
-        return p
+        return p    
 
-key = [" ", "A", "B", "C", "D"]
-p=[0, 0.375, 0.375, 0.125, 0.125]
+key = [" ", "A", "B", "C", "D", "E"]
+p=[0, 5/15, 4/15, 3/15, 2/15, 1/15]
 n=len(p)-1
 
 A=[[0 for j in range(0,n+2)] for i in range(0, n+2)]
